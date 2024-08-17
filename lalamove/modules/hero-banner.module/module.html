@@ -1,0 +1,49 @@
+<div class="top-banner-container hasBox">
+  <div
+    class="top-banner-img"
+    style="
+      background-image: url(https://www.lalamove.com/hubfs/img_home_banner_TW-1.jpg);
+    "
+  >
+    <div class="top-banner-gradient"></div>
+    <div class="top-banner-content">
+      <div class="section">
+        <div class="banner-section">
+          <h1 class="appear in-left appeared">
+            {% inline_text
+              field="title",
+              value="{{ module.title }}" %}
+          </h1>
+          <p>
+            {% inline_text
+              field="subtitle",
+              value="{{ module.subtitle }}" %}
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="button-box-holder">
+      <div class="button-box-inner">
+        {% for item in module.identity_group %}
+        <a class="button-box">
+          <span class="button-box__title">
+            <span class="button-box__title__icon">
+              <img src="{{ item.icon }}" alt="" />
+            </span>
+            <span class="button-box__title__txt">
+              {% inline_text
+                field="identity",
+                value="{{ item.identity }}" %}
+            </span>
+          </span>
+          <span class="button-box__content">
+            {% inline_text
+              field="description",
+              value="{{ item.description }}" %}
+          </span>
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

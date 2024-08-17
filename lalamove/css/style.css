@@ -1,0 +1,1718 @@
+input:-webkit-autofill,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:hover,
+select:-webkit-autofill,
+select:-webkit-autofill:focus,
+select:-webkit-autofill:hover,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:focus,
+textarea:-webkit-autofill:hover {
+  -webkit-box-shadow: inset 0 0 0 1000px transparent;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -ms-appearance: none;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  font-size: 18px;
+  height: 56px;
+  outline: none;
+  outline-color: transparent;
+  padding: 15px 23px;
+  text-shadow: 0 0 0 transparent;
+}
+
+iframe {
+  background: #fff;
+  border: none;
+  width: 100%;
+}
+
+.grayscale {
+  filter: grayscale(100%) !important;
+}
+
+.content-wrapper {
+  max-width: 1080px !important;
+}
+
+.header__container.content-wrapper {
+  max-width: 1240px !important;
+}
+
+.img-responsive {
+  height: auto;
+  width: 100%;
+}
+
+.img-preload {
+  opacity: 0;
+  position: absolute;
+  top: -99999px;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.pt-0 {
+  padding-top: 0 !important;
+}
+
+.pb-0,
+.py-0 {
+  padding-bottom: 0 !important;
+}
+
+.py-0 {
+  padding-top: 0 !important;
+}
+
+.py-1 {
+  padding-bottom: 0.5%;
+  padding-top: 0.5%;
+}
+
+.py-2 {
+  padding-bottom: 1%;
+  padding-top: 1%;
+}
+
+.py-3 {
+  padding-bottom: 1.5%;
+  padding-top: 1.5%;
+}
+
+body {
+  letter-spacing: 0;
+}
+
+p {
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+}
+
+#haloword-lookup {
+  display: none;
+}
+
+.body-container-wrapper {
+  padding-top: 95px;
+}
+
+.mobile-show {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .desktop-show {
+    display: none;
+  }
+
+  .mobile-show {
+    display: block;
+  }
+}
+
+.has-top-banner .body-container-wrapper {
+  padding-top: 0;
+}
+
+.has-top-banner.onTop .header {
+  background-color: transparent;
+}
+
+.has-top-banner.onTop body .header .navigation-primary .submenu a {
+  color: #fff;
+}
+
+.has-top-banner.onTop body .header .navigation-primary .submenu.level-2 a {
+  color: #3c3c3b;
+}
+
+.has-top-banner.onTop
+  body
+  .header
+  .navigation-primary
+  .submenu.level-2
+  a:hover {
+  color: #ff671d;
+}
+
+.has-top-banner.onTop .submenu.level-1 > .has-submenu > .menu-arrow {
+  background: url(https://www.lalamove.com/hubfs/raw_assets/public/lalamove-website-2020/images/icon/icon-arrow-down-white.svg)
+    no-repeat 50%;
+}
+
+.has-top-banner.onTop .header__cta a {
+  color: #fff;
+}
+
+.has-top-banner.onTop .header__cta a .icon-lang {
+  background: url(https://www.lalamove.com/hubfs/raw_assets/public/lalamove-website-2020/images/icon/icon-lang-white.svg)
+    no-repeat 50%;
+  background-size: contain;
+}
+
+.has-top-banner.onTop .header__cta a .icon-login {
+  background: url(https://www.lalamove.com/hubfs/raw_assets/public/lalamove-website-2020/images/icon/icon-login-white.svg)
+    no-repeat 50%;
+  background-size: contain;
+}
+
+.has-top-banner.onTop .header__cta a.active {
+  color: #fff;
+}
+
+.has-top-banner.onTop .header__cta a:hover {
+  color: #ff6519;
+}
+
+@media (max-width: 767px) {
+  .body-container-wrapper {
+    padding-top: 65px;
+  }
+
+  .has-top-banner.onTop .header__cta a.active,
+  .has-top-banner.onTop body .header .navigation-primary .submenu a {
+    color: #3c3c3b;
+  }
+
+  .has-top-banner.onTop .header__cta a .icon-lang {
+    background: url(https://www.lalamove.com/hubfs/raw_assets/public/lalamove-website-2020/images/icon/icon-lang-orange.svg)
+      no-repeat 50%;
+  }
+
+  .has-top-banner.onTop .header__cta a.btn-login {
+    color: #ff6519;
+  }
+
+  .has-top-banner.onTop .header__cta a .icon-login {
+    background: url(https://www.lalamove.com/hubfs/raw_assets/public/lalamove-website-2020/images/icon/icon-login.svg)
+      no-repeat 50%;
+  }
+
+  .has-top-banner.onTop .submenu.level-1 > .has-submenu > .menu-arrow {
+    background: url(https://www.lalamove.com/hubfs/raw_assets/public/lalamove-website-2020/images/icon/icon-arrow-down.svg)
+      no-repeat 50%;
+  }
+}
+
+.modal {
+  display: none;
+  height: 100%;
+  overflow: hidden;
+  z-index: 99999;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.modal,
+.modal__overlay {
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
+.modal__overlay {
+  background: rgba(60, 60, 59, 0.8);
+  height: 100vh;
+  z-index: 10;
+}
+
+.modal__wrapper {
+  background: #fff;
+  left: 50%;
+  margin-top: -20%;
+  max-height: calc(100% - 70px);
+  max-width: 905px;
+  min-height: 200px;
+  opacity: 0;
+  overflow-y: auto;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transition: margin-top 0.3s ease-out, opacity 0.3s ease-out;
+  -moz-transition: margin-top 0.3s ease-out, opacity 0.3s ease-out;
+  -o-transition: margin-top 0.3s ease-out, opacity 0.3s ease-out;
+  transition: margin-top 0.3s ease-out, opacity 0.3s ease-out;
+  width: 95%;
+  z-index: 100;
+}
+
+.modal__content__wrapper {
+  padding: 30px;
+}
+
+.modal__desc {
+  font-size: 18px;
+}
+
+.modal__image {
+  margin-bottom: 25px;
+}
+
+.modal__desc p {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.modal__title {
+  font-weight: 600;
+  margin-bottom: 35px;
+}
+
+.modal__title,
+.modal__title h1,
+.modal__title h2,
+.modal__title h3,
+.modal__title h4,
+.modal__title h5,
+.modal__title h6,
+.modal__title p,
+.modal__title span {
+  font-size: 24px;
+}
+
+.modal__close {
+  background: url(https://www.lalamove.com/hubfs/raw_assets/public/lalamove-website-2020/images/icon/icon-close.svg)
+    no-repeat 50%;
+  background-size: 20px;
+  cursor: pointer;
+  display: block;
+  height: 35px;
+  position: absolute;
+  right: 18px;
+  top: 18px;
+  width: 35px;
+}
+
+.modal.active .modal__wrapper {
+  margin-top: 0;
+  opacity: 1;
+}
+
+@media (max-width: 767px) {
+  .modal__title {
+    margin-bottom: 20px;
+  }
+
+  .modal__image {
+    margin-bottom: 16px;
+  }
+
+  .modal__desc,
+  .modal__desc p {
+    font-size: 16px;
+  }
+
+  .modal__content__wrapper {
+    padding: 25px 20px;
+  }
+}
+
+.continent-holder {
+  border-top: 1px solid rgba(60, 60, 59, 0.2);
+  padding: 30px 0;
+}
+
+.continent-holder.no-border {
+  border-top: none;
+}
+
+.continent-holder .continent__name {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.continent-holder .continent__link {
+  display: inline-block;
+  margin-right: -5px;
+  vertical-align: top;
+  width: 33.333%;
+}
+
+.continent-holder .continent__link-item {
+  display: block;
+  padding: 0 15px 13px 0;
+}
+
+@media (max-width: 767px) {
+  .continent-holder {
+    padding: 20px 0;
+  }
+
+  .continent-holder .continent__name {
+    font-size: 21px;
+  }
+
+  .continent-holder .continent__link {
+    display: block;
+    width: 100%;
+  }
+
+  .continent-holder .continent__link-item {
+    padding: 0 0 10px;
+  }
+}
+
+.section {
+  margin: 0 auto;
+  max-width: 1080px;
+  position: relative;
+}
+
+.app-dl-banner__section.section,
+.page-title-container.section,
+.top-banner-content .section {
+  max-width: 1200px;
+}
+
+.section__sub-title {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.section__title {
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .section__sub-title {
+    font-size: 21px;
+  }
+}
+
+.button-container .button {
+  margin: 0 8px 8px;
+}
+
+.inline-container {
+  display: inline-block;
+}
+
+.section p:last-child {
+  margin-bottom: 0;
+}
+
+.button,
+button {
+  min-width: 175px;
+  padding: 15px 25px;
+  transition: color 0.15s linear, background-color 0.15s linear,
+    border 0.15s linear;
+}
+
+.button-transparent {
+  background-color: transparent;
+  border: 1px solid #ff671d;
+  color: #ff671d;
+  font-weight: 600;
+}
+
+.button-transparent.active,
+.button-transparent:hover,
+.button-transparent:focus {
+  background-color: transparent;
+  border: 1px solid #3c3b3b;
+  color: #3c3b3b;
+}
+
+.button-grey {
+  background-color: #f1f3f4;
+  border: 1px solid #f1f3f4;
+  color: #ff671d;
+  font-weight: 600;
+}
+
+.button-grey:focus,
+.button-grey:hover {
+  background-color: #494a52;
+  border: 1px solid #494a52;
+  color: #ff671d;
+}
+
+.btn-read-more {
+  color: #ff671d;
+  font-weight: 500;
+  padding-right: 18px;
+  position: relative;
+}
+
+.btn-read-more:after {
+  background: url(https://www.lalamove.com/hubfs/raw_assets/public/lalamove-website-2020/images/icon/icon-arrow-down-orange.svg)
+    no-repeat 50%;
+  content: "";
+  height: 12px;
+  position: absolute;
+  right: 0;
+  top: 6px;
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+  width: 12px;
+}
+
+.btn-read-more:hover:before,
+a:hover .btn-read-more:before {
+  background: #ff671d;
+  bottom: -3px;
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  width: calc(100% - 18px);
+}
+
+@media (max-width: 767px) {
+  .button,
+  button {
+    padding: 12px 15px;
+  }
+}
+
+.icon-btn {
+  margin: 0 15px;
+}
+
+.icon-btn__icon,
+.icon-btn__txt {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.icon-btn__icon {
+  height: 22px;
+  margin-right: 4px;
+  width: 22px;
+}
+
+.icon-lang {
+  background: url(https://www.lalamove.com/hubfs/raw_assets/public/lalamove-website-2020/images/icon/icon-lang-grey.svg)
+    no-repeat 50%;
+  background-size: contain;
+  transition: background 0.15s linear;
+}
+
+.active .icon-lang {
+  background: url(https://www.lalamove.com/hubfs/raw_assets/public/lalamove-website-2020/images/icon/icon-lang-orange.svg)
+    no-repeat 50%;
+  background-size: contain;
+}
+
+.icon-login {
+  background: url(https://www.lalamove.com/hubfs/raw_assets/public/lalamove-website-2020/images/icon/icon-login.svg)
+    no-repeat 50%;
+  background-size: contain;
+  transition: background 0.15s linear;
+}
+
+@-webkit-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translatex(-10px);
+    -moz-transform: translatex(-10px);
+    -o-transform: translatex(-10px);
+    transform: translatex(-10px);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translatex(0);
+    -moz-transform: translatex(0);
+    -o-transform: translatex(0);
+    transform: translatex(0);
+  }
+}
+
+@-moz-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translatex(-10px);
+    -moz-transform: translatex(-10px);
+    -o-transform: translatex(-10px);
+    transform: translatex(-10px);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translatex(0);
+    -moz-transform: translatex(0);
+    -o-transform: translatex(0);
+    transform: translatex(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translatex(-100px);
+    -moz-transform: translatex(-100px);
+    -o-transform: translatex(-100px);
+    transform: translatex(-100px);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translatex(0);
+    -moz-transform: translatex(0);
+    -o-transform: translatex(0);
+    transform: translatex(0);
+  }
+}
+
+.in-left {
+  opacity: 0;
+}
+
+.in-left.appeared {
+  -webkit-animation-duration: 0.5s;
+  -moz-animation-duration: 0.5s;
+  -o-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeInLeft;
+  -moz-animation-name: fadeInLeft;
+  -o-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+  -webkit-animation-timing-function: ease;
+  -moz-animation-timing-function: ease;
+  -o-animation-timing-function: ease;
+  animation-timing-function: ease;
+}
+
+.form-field {
+  overflow: hidden;
+  position: relative;
+}
+
+.field-select {
+  background: #f3f4f5
+    url(https://www.lalamove.com/hubfs/raw_assets/public/lalamove-website-2020/images/icon/icon-arrow-down-orange.svg)
+    no-repeat center right 23px;
+  background-size: 12px;
+}
+
+.field-select:after {
+  background: #fff;
+  content: "";
+  height: 100%;
+  position: absolute;
+  right: 55px;
+  top: 0;
+  width: 1px;
+  z-index: 1;
+}
+
+.field-select select {
+  padding: 15px 80px 15px 23px;
+  width: calc(100% + 30px);
+}
+
+.card-slider-container {
+  display: block;
+  padding: 15px 0;
+  position: relative;
+}
+
+.swiper-container {
+  height: fit-content;
+  margin-left: 0;
+  padding: 10px;
+  width: calc(100% + 20px);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  background: rgba(255, 103, 29, 0.8);
+  color: #fff;
+  height: 48px;
+  top: 38%;
+  transition: background 0.15s linear;
+  width: 48px;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background: #ff671d;
+}
+
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
+  left: -33px;
+}
+
+.swiper-button-prev:after,
+.swiper-container-rtl .swiper-button-next:after {
+  margin-left: -2px;
+}
+
+.swiper-button-next,
+.swiper-container-rtl .swiper-button-prev {
+  right: -33px;
+}
+
+.swiper-button-next:after,
+.swiper-container-rtl .swiper-button-prev:after {
+  margin-right: -2px;
+}
+
+.swiper-pagination {
+  padding-top: 35px;
+  position: relative;
+  width: 100%;
+}
+
+.swiper-pagination-bullet {
+  background: #ff6519;
+  height: 10px;
+  margin: 0 12px;
+  opacity: 0.28;
+  width: 10px;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+.swiper-container-horizontal
+  > .swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  margin: 0 12px;
+}
+
+@media (max-width: 767px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+
+  .card-slider-container {
+    padding-top: 5px;
+  }
+
+  .swiper-pagination {
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .swiper-container {
+    width: 100%;
+  }
+}
+
+.card-slider .swiper-slide {
+  height: auto;
+}
+
+.card-slide {
+  background: #fff;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.15);
+  height: 100%;
+  position: relative;
+  top: 0;
+  transition: top 0.2s ease, box-shadow 0.2s ease;
+  width: 100%;
+}
+
+.card-slide,
+.card-slide__content,
+.card-slide__date,
+.card-slide__img,
+.card-slide__more,
+.card-slide__title {
+  display: block;
+}
+
+.card-slide__img {
+  line-height: 0;
+}
+
+.card-slide__content {
+  padding: 18px 15px 50px;
+}
+
+.card-slide__date {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.card-slide__title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.card-slide__more {
+  bottom: 13px;
+  color: #ff671d;
+  font-weight: 700;
+  padding-right: 17px;
+  position: absolute;
+  right: 15px;
+}
+
+.card-slide__more:after {
+  background: url(https://www.lalamove.com/hubfs/raw_assets/public/lalamove-website-2020/images/icon/icon-arrow-down-orange.svg)
+    no-repeat 50%;
+  content: "";
+  height: 12px;
+  position: absolute;
+  right: 0;
+  top: 5px;
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+  width: 12px;
+}
+
+.card-slide:active,
+.card-slide:focus,
+.card-slide:hover,
+.card-slide:visited {
+  color: #3c3c3b;
+  text-decoration: none;
+}
+
+.card-slide:hover {
+  box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.35);
+  top: -3px;
+  transition: top 0.2s ease, box-shadow 0.2s ease;
+}
+
+@media (max-width: 767px) {
+  .card-slide__title {
+    font-size: 21px;
+  }
+
+  .card-slide__content {
+    padding: 15px 15px 50px;
+  }
+}
+
+.accordion-head {
+  border: none;
+  color: #444;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  text-align: left;
+  width: 100%;
+}
+
+.accordion-panel {
+  display: none;
+  overflow: hidden;
+}
+
+.accordion-panel a {
+  color: #3c3c3b;
+  text-decoration: underline;
+}
+
+.article-slider-container {
+  position: relative;
+}
+
+.article-slider-container .swiper-button-next,
+.article-slider-container .swiper-container-rtl .swiper-button-prev {
+  right: calc(45% - 33px);
+}
+
+.article-slider-container .swiper-button-next,
+.article-slider-container .swiper-button-prev {
+  top: 48%;
+}
+
+.article-slider-container .swiper-pagination {
+  bottom: 0;
+  padding: 0 0 0 5.5%;
+  position: absolute;
+  right: 0;
+  width: 45%;
+}
+
+.article-slide__content,
+.article-slide__img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.article-slide__img {
+  margin-right: -4px;
+  width: 55%;
+}
+
+.article-slide__img img {
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.15);
+  display: block;
+}
+
+.article-slide__content {
+  padding: 0 0 30px 5.5%;
+  width: 45%;
+}
+
+.article-slide__cat,
+.article-slide__date {
+  display: inline-block;
+  line-height: 120%;
+  margin-bottom: 5px;
+  vertical-align: middle;
+}
+
+.article-slide__date {
+  padding-right: 10px;
+}
+
+.article-slide__cat {
+  border-left: 2px solid #ff6519;
+  padding-left: 15px;
+}
+
+.article-slide__head {
+  font-size: 24px;
+  margin-bottom: 3px;
+}
+
+.article-slide__title {
+  margin-bottom: 20px;
+}
+
+.article-slide__title h4,
+.article-slide__title p,
+.article-slide__title span {
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 120%;
+  margin-bottom: 0;
+}
+
+.article-slide__content-img {
+  display: none;
+  margin-top: 25px;
+  width: 100%;
+}
+
+.article-slide__content-img img {
+  display: block;
+}
+
+.article-slide__desc,
+.article-slide__desc h1,
+.article-slide__desc h2,
+.article-slide__desc h3,
+.article-slide__desc h4,
+.article-slide__desc h5,
+.article-slide__desc h6,
+.article-slide__desc p {
+  text-align: left !important;
+}
+
+.article-slide__btn {
+  padding-top: 20px;
+}
+
+@media (max-width: 1280px) {
+  .article-slider-container .swiper-button-next,
+  .article-slider-container .swiper-container-rtl .swiper-button-prev {
+    right: calc(55% - 33px);
+  }
+
+  .article-slider-container .swiper-button-next,
+  .article-slider-container .swiper-button-prev {
+    height: 40px;
+    top: 50%;
+    width: 40px;
+  }
+
+  .article-slider-container .swiper-pagination {
+    width: 55%;
+  }
+
+  .article-slide__content,
+  .article-slide__img {
+    vertical-align: middle;
+  }
+
+  .article-slide__img {
+    width: 45%;
+  }
+
+  .article-slide__content {
+    width: 55%;
+  }
+
+  .article-slide__title h4,
+  .article-slide__title p,
+  .article-slide__title span {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 767px) {
+  .article-slider-container {
+    position: relative;
+  }
+
+  .article-slider-container .swiper-button-next,
+  .article-slider-container .swiper-button-prev {
+    display: flex;
+  }
+
+  .article-slider-container .swiper-button-next,
+  .article-slider-container .swiper-container-rtl .swiper-button-prev {
+    right: -20px;
+  }
+
+  .article-slider-container .swiper-button-prev,
+  .article-slider-container .swiper-container-rtl .swiper-button-next {
+    left: -20px;
+  }
+
+  .article-slider-container .swiper-button-next,
+  .article-slider-container .swiper-button-prev {
+    bottom: 31%;
+    top: auto;
+  }
+
+  .article-slider-container .swiper-pagination {
+    padding: 20px 0 0;
+    position: relative;
+    width: 100%;
+  }
+
+  .article-slider-container .swiper-container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .article-slide__content,
+  .article-slide__img {
+    display: block;
+    width: 100%;
+  }
+
+  .article-slide__img {
+    display: none;
+  }
+
+  .article-slide__content {
+    padding: 0;
+  }
+
+  .article-slide__title {
+    margin-bottom: 20px;
+  }
+
+  .article-slide__title h4,
+  .article-slide__title p,
+  .article-slide__title span {
+    font-size: 32px;
+  }
+
+  .article-slide__content-img {
+    display: block;
+  }
+}
+
+@media (max-width: 450px) {
+  .article-slider-container .swiper-button-next,
+  .article-slider-container .swiper-button-prev {
+    bottom: 26%;
+  }
+}
+
+.body-container--blog-post .app-dl-banner-container,
+.body-container--blog-post .blog-recent-posts {
+  background-color: #f1f3f4;
+}
+
+.blog-post {
+  margin: 0 auto;
+  max-width: 910px;
+  padding: 20px 0;
+}
+
+.blog-post__head {
+  font-size: 24px;
+  line-height: 110%;
+  margin-bottom: 10px;
+}
+
+.blog-post__head .hs_cos_wrapper,
+.blog-post__head-tags,
+.blog-post__timestamp {
+  display: inline-block;
+}
+
+.blog-post__head-tags {
+  border-left: 2px solid #ff6519;
+  margin-left: 10px;
+  padding-left: 15px;
+}
+
+.blog-post__title h1 {
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 125%;
+  margin-bottom: 12px;
+}
+
+.blog-post__body img {
+  height: auto;
+  max-width: 100%;
+}
+
+.blog-post__meta {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 12px 0 40px;
+}
+
+.blog-post__meta a {
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.blog-post__img {
+  margin-bottom: 35px;
+}
+
+.blog-post__tags {
+  padding: 10px 0 0;
+}
+
+.blog-post__tags-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.blog-post__tag-link {
+  font-weight: 400;
+  margin-bottom: 6px;
+  margin-right: 10px;
+  min-width: 100px;
+  padding: 6px 15px;
+  text-transform: capitalize;
+}
+
+@media (max-width: 767px) {
+  .blog-post {
+    padding-top: 15px;
+  }
+
+  .blog-post__head {
+    font-size: 21px;
+  }
+
+  .blog-post__title h1 {
+    font-size: 32px;
+  }
+
+  .blog-post__meta {
+    margin: 10px 0 20px;
+  }
+
+  .blog-post__img {
+    margin-bottom: 20px;
+  }
+
+  .blog-post__tag-link {
+    margin-right: 6px;
+  }
+}
+
+.blog-recent-posts {
+  padding: 60px 0 30px;
+}
+
+.blog-index__row,
+.related-blog-item__row {
+  display: block;
+  height: fit-content;
+  margin-left: -15px;
+  padding-top: 20px;
+  position: relative;
+  width: calc(100% + 30px);
+}
+
+.blog-index__wrapper,
+.related-blog-item__wrapper {
+  display: inline-block;
+  height: 100%;
+  margin-bottom: 30px;
+  margin-right: -5px;
+  padding: 0 15px;
+  vertical-align: top;
+  width: 33.333%;
+}
+
+.blog-index__img-wrapper,
+.related-blog-item__img-wrapper {
+  display: block;
+}
+
+.blog-index__img,
+.related-blog-item__img {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+}
+
+.blog-index__link,
+.related-blog-item__link {
+  background: #fff;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
+  display: block;
+  height: inherit;
+  position: relative;
+  text-decoration: none;
+  top: 0;
+  transition: top 0.2s ease, box-shadow 0.2s ease;
+  width: 100%;
+}
+
+.blog-index__link:hover,
+.related-blog-item__link:hover {
+  box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.35);
+  color: #3c3c3b;
+  text-decoration: none;
+  top: -3px;
+  transition: top 0.2s ease, box-shadow 0.2s ease;
+}
+
+.blog-index__date,
+.blog-index__desc,
+.blog-index__read-more,
+.blog-index__title,
+.related-blog-item__date,
+.related-blog-item__desc,
+.related-blog-item__read-more,
+.related-blog-item__title {
+  display: block;
+  position: relative;
+}
+
+.blog-index__desc,
+.related-blog-item__desc {
+  padding: 12px 15px 45px;
+}
+
+.blog-index__date,
+.related-blog-item__date {
+  font-size: 18px;
+  margin-bottom: 3px;
+}
+
+.blog-index__title,
+.related-blog-item__title {
+  color: #000;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 125%;
+}
+
+.blog-index__tags,
+.related-blog-item__tags {
+  display: block;
+  padding: 12px 0 0;
+}
+
+.blog-index__tag,
+.related-blog-item__tag {
+  font-size: 16px;
+  margin: 0 10px 10px 0;
+  min-width: 50px;
+  padding: 6px 15px;
+}
+
+.blog-index__tag:hover,
+.related-blog-item__tag:hover {
+  background-color: #f1f3f4;
+  border: 1px solid #f1f3f4;
+}
+
+.blog-index__read-more,
+.related-blog-item__read-more {
+  bottom: 15px;
+  position: absolute;
+  right: 15px;
+}
+
+@media (max-width: 1280px) {
+  .blog-index__wrapper,
+  .related-blog-item__wrapper {
+    padding: 0 8px;
+  }
+
+  .blog-index__desc,
+  .related-blog-item__desc {
+    padding: 8px 10px 40px;
+  }
+
+  .blog-index__title,
+  .related-blog-item__title {
+    font-size: 21px;
+  }
+
+  .blog-index__read-more,
+  .related-blog-item__read-more {
+    right: 12px;
+  }
+}
+
+@media (max-width: 767px) {
+  .blog-recent-posts {
+    padding: 45px 0 15px;
+  }
+
+  .hs_cos_wrapper_type_related_blog_posts {
+    display: block;
+    position: relative;
+    width: 100%;
+  }
+
+  .blog-index__row,
+  .related-blog-item__row {
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    max-width: 500px;
+    width: 100%;
+  }
+
+  .blog-index__wrapper,
+  .related-blog-item__wrapper {
+    display: block;
+    height: auto;
+    margin: 0 auto 25px;
+    padding: 0;
+    width: 100%;
+  }
+}
+
+.body-container--blog-index .article-slider-container {
+  margin: 65px 0;
+}
+
+.body-container--blog-index .blog-list-container {
+  padding: 10px 0 30px;
+}
+
+.body-container--blog-index .blog-list-container .button-container {
+  padding-top: 10px;
+}
+
+.blog-tab-container {
+  overflow: auto;
+  overflow-y: visible;
+  padding: 10px 0 20px;
+  white-space: nowrap;
+}
+
+.blog-tab-container::-webkit-scrollbar {
+  display: none;
+}
+
+.blog-tab-container__line {
+  background: rgba(60, 60, 59, 0.2);
+  height: 1px;
+  margin-top: -5px;
+  width: 100%;
+}
+
+.blog-tab-container .blog-tab__item {
+  font-size: 18px;
+  margin-right: 30px;
+  position: relative;
+  text-decoration: none !important;
+  transition: font-weight 0.2s ease-out;
+}
+
+.blog-tab-container .blog-tab__item:last-child {
+  margin-right: 0;
+}
+
+.blog-tab-container .blog-tab__item:before {
+  background-color: #ff671d;
+  bottom: -20px;
+  content: "";
+  height: 5px;
+  left: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.2s ease-out;
+  width: 100%;
+}
+
+.blog-tab-container .blog-tab__item.active,
+.blog-tab-container .blog-tab__item:hover {
+  color: #3c3c3b;
+  font-weight: 600;
+}
+
+.blog-tab-container .blog-tab__item.active:before,
+.blog-tab-container .blog-tab__item:hover:before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.blog-index__wrapper {
+  display: none;
+}
+
+.blog-index__wrapper.show {
+  display: inline-block;
+}
+
+.btn-show-all {
+  padding: 15px 45px;
+  position: relative;
+}
+
+.btn-show-all:after {
+  background: url(https://www.lalamove.com/hubfs/raw_assets/public/lalamove-website-2020/images/icon/icon-arrow-down-orange.svg)
+    no-repeat 50%;
+  content: "";
+  height: 12px;
+  margin-top: -6px;
+  position: absolute;
+  right: 35px;
+  top: 50%;
+  width: 12px;
+}
+
+.btn-show-all:hover:after {
+  background: url(https://www.lalamove.com/hubfs/raw_assets/public/lalamove-website-2020/images/icon/icon-arrow-down.svg)
+    no-repeat 50%;
+}
+
+@media (max-width: 767px) {
+  .body-container--blog-index .article-slider-container {
+    margin: 30px 0;
+  }
+
+  .body-container--blog-index .blog-list-container {
+    padding-top: 0;
+  }
+
+  .blog-tab-container {
+    padding: 10px 0;
+  }
+
+  .blog-tab-container .blog-tab__item {
+    margin-right: 23px;
+  }
+
+  .blog-tab-container .blog-tab__item:before {
+    bottom: -10px;
+  }
+}
+
+.city-dropdown {
+  font-size: 18px;
+  font-weight: 600;
+  position: relative;
+  width: 100%;
+}
+
+.city-dropdown.hidden {
+  display: none;
+  height: 0;
+  position: absolute;
+  top: -99999px;
+}
+
+.city-dropdown .form-field,
+.city-dropdown__desc {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.city-dropdown__desc {
+  background: #f3f4f5;
+  height: 56px;
+  margin-right: -5px;
+  padding: 16px 3px 15px 25px;
+}
+
+.city-dropdown .form-field {
+  min-width: 200px;
+}
+
+.city-dropdown select {
+  font-weight: 600;
+  padding-left: 0;
+}
+
+@media (max-width: 767px) {
+  .city-dropdown {
+    margin-top: 0;
+    max-width: 100%;
+    padding-bottom: 25px;
+    width: 100%;
+  }
+}
+
+html[lang="vi-vn"] .blog-post__title h1,
+html[lang="vi-vn"] h2 {
+  font-weight: 700 !important;
+}
+
+html[lang="pt-br"] .top-banner-content p {
+  font-size: 18px;
+  max-width: 480px;
+}
+
+html[lang="pt-br"] .top-banner-btn {
+  margin-top: 10px;
+}
+
+html[lang="es-mx"] .modal#modal-login .btn-login-large {
+  font-size: 30px;
+  margin: 30px 2.5% 0;
+}
+
+@media (max-width: 1280px) {
+  html[lang="es-mx"] .modal#modal-login .btn-login-large {
+    font-size: 25px;
+    margin: 0 2.5% 35px;
+  }
+}
+
+._hj-widget-container {
+  display: none !important;
+}
+
+html[lang="bn"] body,
+html[lang="bn"] h1,
+html[lang="bn"] h2,
+html[lang="bn"] h3,
+html[lang="bn"] h4,
+html[lang="bn"] h5,
+html[lang="bn"] h6 {
+  font-family: Noto Sans Bengali, Roboto, sans-serif !important;
+}
+
+html[lang="bn"] .button-box span.button-box__title__txt {
+  margin-left: -2px;
+}
+
+.tabs {
+  margin: 0 auto;
+  max-width: 1080px;
+  position: relative;
+  width: 100%;
+}
+
+.tabs .tabs-nav {
+  font-size: 105%;
+  font-weight: 700;
+  list-style: none;
+  margin: 0;
+  padding: 5px;
+  text-align: center;
+}
+
+.tabs .tabs-nav li {
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 10px;
+  padding: 8px 10px;
+  position: relative;
+}
+
+.tabs .tabs-nav li a {
+  color: #3c3c3b;
+  text-decoration: none;
+}
+
+.tabs .tabs-nav li a:before {
+  background-color: #ff671d;
+  bottom: -5px;
+  content: "";
+  height: 5px;
+  left: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.2s ease-out;
+  width: 100%;
+}
+
+.tabs .tabs-nav li:hover a {
+  color: #ff671d;
+}
+
+.tabs .tabs-nav li.active a:before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.tabs .tab-content {
+  padding: 10px;
+}
+
+html[lang="ja-jp"] body,
+html[lang="ja-jp"] h1,
+html[lang="ja-jp"] h2,
+html[lang="ja-jp"] h3,
+html[lang="ja-jp"] h4,
+html[lang="ja-jp"] h5,
+html[lang="ja-jp"] h6 {
+  font-family: Noto Sans JP, sans-serif !important;
+}
+
+html[lang="ja-jp"] .top-banner-content h1 {
+  font-size: 75px;
+}
+
+html[lang="ja-jp"] .button-box span.button-box__read-more {
+  font-size: 14px;
+}
+
+@media (max-width: 1024px) {
+  html[lang="ja-jp"] .button-box span.button-box__read-more {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 767px) {
+  html[lang="ja-jp"] .top-banner-content h1 {
+    font-size: 50px;
+  }
+
+  html[lang="ja-jp"] .button-box span.button-box__title__txt {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 500px) {
+  html[lang="ja-jp"] .top-banner-content h1 {
+    font-size: 50px;
+  }
+}
+
+html[lang="ja-jp"] #url-youtube {
+  display: none;
+}
+
+html[lang="ja-jp"] .submenu.level-1 > li.has-submenu {
+  margin-right: 3px;
+}
+
+.header__cta {
+  position: relative;
+  top: -3px;
+}
+
+@media (max-width: 1150px) {
+  .header__cta {
+    position: absolute;
+    right: 0;
+    top: 5px;
+  }
+}
+
+html[lang="es-mx"] .blog-index__tags,
+html[lang="es-mx"] .blog-post__tags,
+html[lang="es-mx"] .blog-tab-container,
+html[lang="es-mx"] .blog-tab-container__line {
+  display: none !important;
+}
+
+@media (max-width: 767px) {
+  .banner-section__top-icon {
+    margin: 0 0 10px !important;
+  }
+}
+
+.social-links__link#url-link .social-links__icon svg {
+  opacity: 0;
+}
+
+.social-links__link#url-link .social-links__icon {
+  background: url(https://www.lalamove.com/hubfs/Lalamove%20Website%202020/icon/icon-share-tiktok.svg)
+    no-repeat 50%;
+  background-size: contain;
+}
+
+.social-links__link#url-link .social-links__icon:hover {
+  background: url(https://www.lalamove.com/hubfs/Lalamove%20Website%202020/icon/icon-share-tiktok-active.svg)
+    no-repeat 50%;
+  background-size: contain;
+}
+
+.social-links__link#url-twitter {
+  padding-top: 2px;
+}
+
+.social-links__link#url-twitter .social-links__icon svg {
+  opacity: 0;
+}
+
+.social-links__link#url-twitter .social-links__icon {
+  background: url(https://www.lalamove.com/hubfs/Lalamove%20Website%202020/icon/icon-share-x.png)
+    no-repeat 50%;
+  background-size: contain;
+}
+
+.social-links__link#url-twitter .social-links__icon:hover {
+  background: url(https://www.lalamove.com/hubfs/Lalamove%20Website%202020/icon/icon-share-x-active.png)
+    no-repeat 50%;
+  background-size: contain;
+}
+
+html[lang="bn"] .article-slide__img {
+  margin-right: -6px;
+}
+
+@media (min-width: 768px) {
+  html[lang="id"] .hs-menu-item.hs-menu-depth-1 {
+    padding-bottom: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  html[lang="id"] .hs-menu-item.hs-menu-depth-1 {
+    padding: 0 28px;
+  }
+}

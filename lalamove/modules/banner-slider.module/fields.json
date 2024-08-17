@@ -1,0 +1,27 @@
+[ {
+  "id" : "2024b4b1-5ca2-a7f9-e7e2-76e0f270027a",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "picker" : "image",
+  "id" : "8f047f63-848e-04e7-c274-b8cce2b779b7",
+  "name" : "banner_image",
+  "display_width" : null,
+  "label" : "Banner Image",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 3,
+    "max" : 5,
+    "sorting_label_field" : null,
+    "default" : 3
+  },
+  "type" : "file"
+} ]

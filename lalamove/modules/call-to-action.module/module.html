@@ -1,0 +1,17 @@
+<div class="section button-container">
+  <a
+    class="button"
+    {% set href = module.button_link.url.href %}
+    href="{% if module.button_link.url.type is equalto("CALL_TO_ACTION") %} {{ href }} {% else %} {{ href|escape_url }} {% endif %}"
+    {% if module.button_link.open_in_new_tab %}
+      target="_blank"
+    {% endif %}
+    {% if module.button_link.rel %}
+      rel="{{ module.button_link.rel|escape_attr }}"
+    {% endif %}
+  >
+    {% inline_text
+      field="button_text",
+      value="{{ module.button_text }}" %}
+  </a>
+</div>

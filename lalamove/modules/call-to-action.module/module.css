@@ -1,0 +1,10 @@
+.button-container {
+  padding: 30px 20px;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .button-container {
+    padding: 20px;
+  }
+}

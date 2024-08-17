@@ -1,0 +1,41 @@
+<div class="app-dl-banner-container">
+  <div class="app-dl-banner">
+    <div
+      class="app-dl-banner-img"
+      style="
+        background-image: url('https://www.lalamove.com/hubfs/TW_image_home%20page_.png');
+      "
+    ></div>
+    <div class="app-dl-banner-content">
+      <div class="section app-dl-banner-section">
+        <div class="app-dl-banner-box">
+          <div class="app-dl-banner-title">
+            <h2>{% inline_text
+                  field="title",
+                  value="{{ module.title }}" %}</h2>
+          </div>
+          <div class="app-dl-banner-desc">
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+          </div>
+          <div class="app-dl-banner-btn-holder">
+            {% for item in module.link %}
+            <a
+              class="app-dl-banner-btn"
+              href="item.button_link.url.type"
+              {% if item.button_link.open_in_new_tab %}
+                target="_blank"
+              {% endif %}
+            >
+              <img src="{{ item.button_image }}" />
+
+              {% set href = item.button_link.url.href %}
+            </a>
+            {% endfor %}
+          </div>
+          <div class="app-dl-banner-desc"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

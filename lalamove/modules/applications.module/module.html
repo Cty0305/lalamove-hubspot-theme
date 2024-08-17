@@ -1,0 +1,40 @@
+<div class="section app-dl-card-section">
+  <div class="section-title">
+    <h2>
+      {% inline_text
+        field="title",
+        value="{{ module.title }}",
+        no_wrapper=True %}
+    </h2>
+  </div>
+
+  <div class="app-dl-card-container">
+    {% for item in module.application_card %}
+    <div class="app-dl-card">
+      <div class="app-dl-card-inner">
+        <div class="app-dl-card-title">
+          {% inline_text
+            field="application_name",
+            value="{{ item.application_name }}" %}
+        </div>
+        <div class="app-dl-card-desc">
+          <!-- 可以添加描述文本 -->
+        </div>
+        <div class="app-dl-card-logo">
+          <img src="{{ item.application_logo }}" alt="Application Logo" />
+        </div>
+
+        <div class="app-dl-card-links">
+          {% for item2 in item.application_link %}
+          <div class="app-dl-card-links-item app-dl-card-link">
+            <a href="{{ item2.application_link.url.href }}" {% if item2.application_link.open_in_new_tab %} target="_blank" {% endif %}>
+              <img src="{{ item2.application_button }}" alt="Application Button" />
+            </a>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>

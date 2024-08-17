@@ -1,0 +1,82 @@
+[ {
+  "picker" : "image",
+  "id" : "08cf37e5-a10d-955d-464c-4c77f335f77e",
+  "name" : "key_visual",
+  "display_width" : null,
+  "label" : "Key Visual",
+  "required" : false,
+  "locked" : false,
+  "type" : "file"
+}, {
+  "id" : "f7c43130-47e1-4363-768f-6cbd8796a1a2",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "52b7693b-691c-b66f-51da-e40b9add1297",
+  "name" : "subtitle",
+  "display_width" : null,
+  "label" : "Subtitle",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "e5e1a401-8958-5cb3-2a12-f05407249b45",
+  "name" : "identity_group",
+  "display_width" : null,
+  "label" : "Identity Group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 3
+  },
+  "children" : [ {
+    "picker" : "image",
+    "id" : "2bea76b1-0640-b085-57b7-f1f5953aa4e4",
+    "name" : "icon",
+    "display_width" : null,
+    "label" : "Icon",
+    "required" : false,
+    "locked" : false,
+    "type" : "file"
+  }, {
+    "id" : "51acad25-fb7e-cb28-5647-e802a717294f",
+    "name" : "identity",
+    "display_width" : null,
+    "label" : "Identity",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "7651ca93-4771-328c-93cf-6da23c348f79",
+    "name" : "description",
+    "display_width" : null,
+    "label" : "Description",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ { }, { }, { } ]
+} ]

@@ -6,15 +6,14 @@
 -->
 {% set template_css = "../../css/templates/system.css" %}
 {% extends "../layouts/base.html" %}
-{# pageTitle is used on system templates for setting a value for the title tag #}
+{# pageTitle is used on system templates for setting a
+value for the title tag #}
 {% set pageTitle = "Confirm subscriptions" %}
-
 {% block body %}
-<section class="content-wrapper">
-  <div class="systems-page">
-    {% module "subscriptions_confirmation"
-      path="@hubspot/email_subscriptions_confirmation"
-    %}
-  </div>
-</section>
+  <section class="content-wrapper">
+    <div class="systems-page">
+      {% module "subscriptions_confirmation"
+        path="@hubspot/email_subscriptions_confirmation" %}
+    </div>
+  </section>
 {% endblock body %}

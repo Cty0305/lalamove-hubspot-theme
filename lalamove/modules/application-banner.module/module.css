@@ -1,0 +1,116 @@
+.app-dl-banner-container {
+  padding-top: 30px;
+}
+
+.app-dl-banner {
+  margin-top: 55px;
+  position: relative;
+}
+
+.app-dl-banner-img {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
+  width: 100%;
+}
+
+.app-dl-banner-content {
+  left: 0;
+  padding: 0 20px;
+  position: absolute;
+  top: -55px;
+  width: 100%;
+  z-index: 10;
+}
+
+.app-dl-banner-btn-holder {
+  display: flex;
+  height: 40px;
+}
+
+.app-dl-banner-btn {
+  display: inline-block;
+  height: 40px;
+  margin-right: 12px;
+  width: auto;
+}
+
+.app-dl-banner-btn img,
+.app-icon {
+  height: 100%;
+}
+
+.app-icon {
+  margin-right: 12px;
+  width: auto;
+}
+
+.app-dl-banner-btn-holder {
+  margin-bottom: 10px;
+}
+
+.app-dl-banner-btn-holder a {
+  text-decoration: none;
+}
+
+.app-dl-banner-btn-holder .app-dl-banner-btn:last-child {
+  margin-right: 0;
+}
+
+.app-dl-banner-box {
+  background: #ff6519;
+  color: #fff;
+  padding: 75px 45px 30px;
+  width: 400px;
+}
+
+.app-dl-banner-box h2 {
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 35px;
+}
+
+.app-dl-banner-box a {
+  color: #fff;
+}
+
+.app-dl-banner-box a:hover {
+  color: #3c3c3b;
+}
+
+.app-dl-banner-desc {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+  .app-dl-banner-container {
+    padding-top: 20px;
+  }
+
+  .app-dl-banner {
+    margin-top: 0;
+  }
+
+  .app-dl-banner-img {
+    height: 210px;
+  }
+
+  .app-dl-banner-content {
+    padding: 0;
+    position: relative;
+    top: 0;
+    width: 100%;
+  }
+
+  .app-dl-banner-box {
+    height: auto;
+    padding: 35px 20px 15px;
+    width: 100%;
+  }
+
+  .app-dl-banner-box h2 {
+    margin-bottom: 25px;
+    max-width: 100%;
+  }
+}

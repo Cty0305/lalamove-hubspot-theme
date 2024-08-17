@@ -1,0 +1,35 @@
+<div class="footer">
+  <div class="footer-container content-wrapper">
+    <div class="footer-row">
+      <div class="footer-logo">
+        <a href="#">
+          <img src="{{ module.footer_logo }}" alt="Footer Logo" />
+        </a>
+
+        <div
+          class="footer-terms"
+          style="font-size: 12px; width: calc(100% + 200px)"
+        >
+          {% for item in module.company_info %}
+          {% inline_text
+            field="company_info",
+            value="{{ item }}" %}
+          {% endfor %}
+        </div>
+      </div>
+
+      <div class="footer-sitemap">
+        {% menu
+          id="{{ module.menu_field }}" %}
+      </div>
+    </div>
+
+    <div class="footer-row-2">
+      <div class="footer-copyright">
+        {% inline_text
+          field="copyright",
+          value="{{ module.copyright }}" %}
+      </div>
+    </div>
+  </div>
+</div>

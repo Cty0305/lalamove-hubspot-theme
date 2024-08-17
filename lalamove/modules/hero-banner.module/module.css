@@ -1,0 +1,331 @@
+.top-banner-container {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.top-banner-container.hasBox {
+  margin-bottom: 135px;
+}
+
+.top-banner-img {
+  background-position: center right 38%;
+  background-repeat: no-repeat;
+  background-size: 1920px;
+  height: 650px;
+  position: relative;
+  width: 100%;
+}
+
+.banner-section__top-icon {
+  margin: 25px 0 15px;
+}
+
+.banner-section__top-icon img {
+  max-height: 80px;
+}
+
+.top-banner-gradient {
+  background: -moz-linear-gradient(
+    91deg,
+    rgba(0, 0, 0, 0.8) 3%,
+    hsla(0, 0%, 100%, 0) 55%
+  );
+  background: -webkit-linear-gradient(
+    91deg,
+    rgba(0, 0, 0, 0.8) 3%,
+    hsla(0, 0%, 100%, 0) 55%
+  );
+  background: linear-gradient(
+    91deg,
+    rgba(0, 0, 0, 0.8) 3%,
+    hsla(0, 0%, 100%, 0) 55%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#ffffff",GradientType=1);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.top-banner-content {
+  color: #fff;
+  left: 0;
+  padding: 0 20px;
+  position: absolute;
+  top: 150px;
+  width: 100%;
+  z-index: 10;
+}
+
+.top-banner-content .banner-section {
+  font-size: 24px;
+  max-width: 780px;
+}
+
+.top-banner-content h1 {
+  color: #fff;
+  line-height: 1.1;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.35);
+}
+
+.top-banner-content p {
+  font-size: 24px;
+  line-height: 1.35;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.35);
+}
+
+.top-banner-btn {
+  margin: 26px 0 0;
+}
+
+.top-banner-btn .button {
+  background: #ff671d
+    url(https://www.lalamove.com/hubfs/raw_assets/public/lalamove-website-2020/images/btn-gradient.svg)
+    no-repeat 50%;
+  background-size: cover;
+  font-size: 24px;
+  font-weight: 500;
+  padding: 17px 25px;
+  transition: color 0.15s linear, background 0.15s linear;
+}
+
+.top-banner-btn .button:active,
+.top-banner-btn .button:focus,
+.top-banner-btn .button:hover {
+  background: #3c3b3b;
+  color: #ff671d;
+  transition: color 0.15s linear, background 0.15s linear;
+}
+
+.button-box-holder {
+  bottom: -105px;
+  position: absolute;
+  width: 100%;
+  z-index: 11;
+}
+
+.button-box-inner {
+  margin: 0 auto;
+  max-width: 990px;
+  text-align: center;
+}
+
+.button-box {
+  background: #ff671d;
+  color: #fff;
+  display: inline-block;
+  height: 245px;
+  margin: 0 30px;
+  padding: 25px 15px;
+  position: relative;
+  text-align: left;
+  text-decoration: none !important;
+  vertical-align: top;
+  width: 260px;
+}
+
+.button-box span {
+  display: block;
+  position: relative;
+}
+
+.button-box span.button-box__title__icon,
+.button-box span.button-box__title__txt {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.button-box__title {
+  padding-bottom: 20px;
+}
+
+.button-box__title__icon {
+  height: 55px;
+  margin-right: -4px;
+  width: 40px;
+}
+
+.button-box__title__icon img {
+  height: 55px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: opacity 0.15s linear;
+  width: 40px;
+}
+
+.button-box__title__icon .onHover {
+  opacity: 0;
+}
+
+.button-box span.button-box__title__txt {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 120%;
+  padding-left: 12px;
+  transition: color 0.15s linear;
+  width: calc(100% - 40px);
+}
+
+.button-box__content {
+  line-height: 1.3;
+}
+
+.button-box span.button-box__read-more {
+  bottom: 20px;
+  font-weight: 700;
+  padding-right: 15px;
+  position: absolute;
+  right: 13px;
+}
+
+.button-box span.button-box__read-more:after {
+  background: url(https://www.lalamove.com/hubfs/raw_assets/public/lalamove-website-2020/images/icon/icon-arrow-down-white.svg)
+    no-repeat 50%;
+  content: "";
+  height: 12px;
+  position: absolute;
+  right: 0;
+  top: 5px;
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+  width: 12px;
+}
+
+.button-box:hover {
+  background: #3c3c3b;
+  color: #fff;
+  transition: background 0.15s linear;
+}
+
+.button-box:hover .button-box__title__icon img {
+  opacity: 0;
+}
+
+.button-box:hover .button-box__title__icon img.onHover {
+  opacity: 1;
+}
+
+.button-box:hover .button-box__title__txt {
+  color: #ff671d;
+}
+
+.button-box:hover .button-box__read-more:before {
+  background: #fff;
+  bottom: -3px;
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  width: calc(100% - 16px);
+}
+
+@media (max-width: 1024px) {
+  .button-box {
+    margin: 0 8px;
+    padding: 18px 12px;
+    width: 220px;
+  }
+
+  .button-box__title__icon,
+  .button-box__title__icon img {
+    height: 42px;
+    width: 30px;
+  }
+
+  .button-box__title {
+    padding-bottom: 15px;
+  }
+
+  .button-box span.button-box__title__txt {
+    font-size: 26px;
+    padding-left: 8px;
+    width: calc(100% - 30px);
+  }
+}
+
+@media (max-width: 767px) {
+  .top-banner-container {
+    margin-bottom: 20px;
+  }
+
+  .top-banner-container.hasBox {
+    margin-bottom: 50px;
+  }
+
+  .top-banner-img {
+    background-size: 1480px;
+    height: 500px;
+  }
+
+  .top-banner-content {
+    top: 90px;
+  }
+
+  .top-banner-content .banner-section {
+    font-size: 21px;
+  }
+
+  .top-banner-content h1 {
+    font-size: 54px;
+  }
+
+  .top-banner-content p {
+    font-size: 21px;
+    line-height: 1.2;
+  }
+
+  .button-box-holder {
+    bottom: -30px;
+  }
+
+  .button-box {
+    height: 100px;
+    margin: 0 3px;
+    padding: 18px 8px 8px;
+    width: 110px;
+  }
+
+  .button-box span.button-box__title__txt {
+    font-size: 16px;
+    padding-left: 0;
+    width: 100%;
+  }
+
+  .button-box__title {
+    padding-bottom: 0;
+  }
+
+  .button-box span.button-box__title__icon {
+    display: block;
+    margin-bottom: 2px;
+  }
+
+  .button-box span.button-box__content,
+  .button-box span.button-box__read-more {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .top-banner-content {
+    top: 75px;
+  }
+
+  .top-banner-content h1 {
+    font-size: 50px;
+  }
+
+  .button-box-holder {
+    bottom: -50px;
+  }
+
+  .top-banner-btn {
+    margin: 20px 0 0;
+  }
+}

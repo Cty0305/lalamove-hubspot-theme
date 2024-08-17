@@ -1,0 +1,43 @@
+<div class="feature-list-container section">
+  <div class="feature-list-img">
+    <img src="{{ module.feature_list_image }}" />
+  </div>
+
+  <div class="feature-list-content">
+    <div class="section-subtitle">
+      {% inline_text
+        field="subtitle",
+        value="{{ module.subtitle }}" %}
+    </div>
+    <div class="section-title">
+      <h2>{% inline_text
+            field="title",
+            value="{{ module.title }}" %}</h2>
+    </div>
+    <div class="feature-list">
+      {% for item in module.feature_list_items %}
+      <div class="feature-list-item">
+        <div class="feature-list-icon">
+          <img src="{{ item.feature_list_icon }}" />
+        </div>
+        <div class="feature-list-desc">
+          <div class="feature-list-desc-title">
+            <b>
+              {% inline_text
+                field="feature-list-title",
+                value="{{ item.feature_list_title }}",
+                no_wrapper=True %}
+            </b>
+          </div>
+          <p>
+            {% inline_text
+              field="feature-list-content",
+              value="{{ item.feature_list_content }}",
+              no_wrapper=True %}
+          </p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

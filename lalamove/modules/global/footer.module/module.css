@@ -1,0 +1,157 @@
+/* Footer Styling */
+.footer {
+  background-color: #f1f3f4;
+  color: #3c3c3b;
+  font-size: 14px;
+  padding-bottom: 3px;
+}
+
+.footer a,
+.footer div,
+.footer h1,
+.footer h2,
+.footer h3,
+.footer h4,
+.footer h5,
+.footer h6,
+.footer p,
+.footer span {
+  color: #3c3c3b;
+}
+
+.footer-container.content-wrapper {
+  max-width: 1280px;
+  padding: 0 20px;
+}
+
+.footer-row {
+  display: table;
+  padding: 35px 0;
+  width: 100%;
+}
+
+.footer-logo,
+.footer-sitemap {
+  display: table-cell;
+  vertical-align: top;
+}
+
+.footer-logo {
+  width: 200px;
+}
+
+.footer-logo img {
+  height: auto;
+  width: 100% !important;
+}
+
+.footer-sitemap {
+  text-align: right;
+}
+
+.footer-sitemap .hs-menu-wrapper {
+  display: inline-block;
+  text-align: left;
+}
+
+.hs-menu-item.hs-menu-depth-1 {
+  max-width: 230px;
+  padding: 0 40px;
+}
+
+.hs-menu-wrapper .hs-menu-item.hs-menu-depth-1:last-child {
+  padding-right: 0;
+}
+
+.hs-menu-item.hs-menu-depth-1 > a {
+  cursor: default;
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  pointer-events: none;
+}
+
+.hs-menu-item.hs-menu-depth-2 {
+  padding: 7px 0;
+}
+
+.hs-menu-item.hs-menu-depth-1 .hs-menu-item.hs-menu-depth-2:last-child {
+  padding-bottom: 0;
+}
+
+.footer-copyright {
+  border-top: 1px solid #dadce0;
+  font-size: 12px;
+  padding: 25px 0;
+}
+
+.footer a:hover {
+  color: #ff671d;
+}
+
+.footer-row-2 {
+  position: relative;
+}
+
+.footer_lang-btn {
+  font-weight: 500;
+  margin: 21px 0 0;
+  position: absolute;
+  right: 0;
+}
+
+.footer_lang-btn .icon-btn {
+  margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+  .hs-menu-item.hs-menu-depth-1 {
+    padding: 0 25px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer-container.content-wrapper {
+    padding: 0 25px;
+  }
+
+  .footer-row {
+    padding-bottom: 0;
+  }
+
+  .footer-logo,
+  .footer-sitemap {
+    display: block;
+  }
+
+  .footer-logo {
+    margin-bottom: 20px;
+    width: 135px;
+  }
+
+  .footer-sitemap {
+    text-align: left;
+  }
+
+  .footer-sitemap .hs-menu-wrapper {
+    display: block;
+  }
+
+  .hs-menu-item.hs-menu-depth-1 {
+    max-width: 100%;
+    padding: 0 0 35px;
+  }
+
+  .hs-menu-wrapper .hs-menu-item.hs-menu-depth-1:last-child {
+    padding: 0;
+  }
+
+  .footer-copyright {
+    border-top: none;
+  }
+
+  .footer_lang-btn {
+    position: relative;
+  }
+}

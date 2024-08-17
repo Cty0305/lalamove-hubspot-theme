@@ -1,0 +1,74 @@
+.app-dl-card-container {
+  display: flex;
+  width: 100%;
+}
+
+.app-dl-card {
+  flex: 1;
+  padding: 20px;
+  vertical-align: top;
+  width: 100%;
+}
+
+.app-dl-card-inner {
+  background: #f1f3f4;
+  height: 100%;
+  padding: 30px 40px;
+  text-align: center;
+}
+
+.app-dl-card-title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 125%;
+  margin-bottom: 15px;
+}
+
+.app-dl-card-desc,
+.app-dl-card-logo {
+  margin-bottom: 15px;
+}
+
+.app-dl-card-logo img {
+  max-height: 80px;
+}
+
+.app-dl-card-links {
+  align-items: center;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+}
+
+.app-dl-card-links-item,
+.app-dl-card-links-item img {
+  max-height: 40px;
+}
+
+.app-dl-card-links-item {
+  margin-right: 10px;
+}
+
+.app-dl-card-links-item:last-child {
+  margin-right: 0;
+}
+
+.app-dl-card-link a {
+  display: block;
+}
+
+@media screen and (max-width: 1280px) {
+  .app-dl-card-inner {
+    padding: 25px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .app-dl-card-container {
+    display: block;
+  }
+
+  .app-dl-card {
+    padding: 15px 20px;
+  }
+}

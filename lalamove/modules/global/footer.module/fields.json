@@ -1,0 +1,220 @@
+[ {
+  "picker" : "image",
+  "id" : "3e3004aa-bb4c-7f59-f0ae-78f12dd4bc50",
+  "name" : "footer_logo",
+  "display_width" : null,
+  "label" : "Footer Logo",
+  "required" : false,
+  "locked" : true,
+  "type" : "file"
+}, {
+  "id" : "bba92008-d4bc-a5e9-0763-43c36c68469f",
+  "name" : "company_info",
+  "display_width" : null,
+  "label" : "Company Info",
+  "required" : false,
+  "locked" : true,
+  "occurrence" : {
+    "min" : 0,
+    "max" : 2,
+    "sorting_label_field" : null,
+    "default" : 0
+  },
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "0afdd9ef-e831-e2ee-5ba4-c241914f7112",
+  "name" : "footer_menu",
+  "display_width" : null,
+  "label" : "Footer Menu",
+  "required" : false,
+  "locked" : true,
+  "type" : "simplemenu",
+  "default" : [ {
+    "isPublished" : false,
+    "pageLinkId" : null,
+    "contentGroupId" : null,
+    "pageLinkName" : null,
+    "isDeleted" : null,
+    "categoryId" : null,
+    "subCategory" : null,
+    "contentType" : null,
+    "state" : null,
+    "linkLabel" : "服務",
+    "linkUrl" : null,
+    "linkParams" : null,
+    "linkTarget" : null,
+    "type" : "NO_LINK",
+    "children" : [ {
+      "isPublished" : false,
+      "pageLinkId" : null,
+      "contentGroupId" : null,
+      "pageLinkName" : null,
+      "isDeleted" : null,
+      "categoryId" : null,
+      "subCategory" : null,
+      "contentType" : null,
+      "state" : null,
+      "linkLabel" : "企業",
+      "linkUrl" : null,
+      "linkParams" : null,
+      "linkTarget" : null,
+      "type" : "NO_LINK",
+      "children" : [ ]
+    } ]
+  }, {
+    "isPublished" : false,
+    "pageLinkId" : null,
+    "contentGroupId" : null,
+    "pageLinkName" : null,
+    "isDeleted" : null,
+    "categoryId" : null,
+    "subCategory" : null,
+    "contentType" : null,
+    "state" : null,
+    "linkLabel" : "公司",
+    "linkUrl" : null,
+    "linkParams" : null,
+    "linkTarget" : null,
+    "type" : "NO_LINK",
+    "children" : [ {
+      "isPublished" : false,
+      "pageLinkId" : null,
+      "contentGroupId" : null,
+      "pageLinkName" : null,
+      "isDeleted" : null,
+      "categoryId" : null,
+      "subCategory" : null,
+      "contentType" : null,
+      "state" : null,
+      "linkLabel" : "關於我們",
+      "linkUrl" : null,
+      "linkParams" : null,
+      "linkTarget" : null,
+      "type" : "PAGE_LINK",
+      "children" : [ ]
+    } ]
+  }, {
+    "isPublished" : false,
+    "pageLinkId" : null,
+    "contentGroupId" : null,
+    "pageLinkName" : null,
+    "isDeleted" : null,
+    "categoryId" : null,
+    "subCategory" : null,
+    "contentType" : null,
+    "state" : null,
+    "linkLabel" : "法律",
+    "linkUrl" : null,
+    "linkParams" : null,
+    "linkTarget" : null,
+    "type" : "NO_LINK",
+    "children" : [ {
+      "isPublished" : false,
+      "pageLinkId" : null,
+      "contentGroupId" : null,
+      "pageLinkName" : null,
+      "isDeleted" : null,
+      "categoryId" : null,
+      "subCategory" : null,
+      "contentType" : null,
+      "state" : null,
+      "linkLabel" : "隱私與政策",
+      "linkUrl" : null,
+      "linkParams" : null,
+      "linkTarget" : null,
+      "type" : "PAGE_LINK",
+      "children" : [ ]
+    } ]
+  } ]
+}, {
+  "id" : "52747568-ca80-f6fd-77dc-8a6c6ef30b35",
+  "name" : "social_media",
+  "display_width" : null,
+  "label" : "Social Media",
+  "required" : false,
+  "locked" : true,
+  "occurrence" : {
+    "min" : 3,
+    "max" : 4,
+    "sorting_label_field" : "",
+    "default" : 3
+  },
+  "children" : [ {
+    "picker" : "file",
+    "id" : "17809990-71c7-f046-14b8-00a7286359ed",
+    "name" : "social_media_image",
+    "display_width" : null,
+    "label" : "Social Media Image",
+    "required" : false,
+    "locked" : false,
+    "type" : "file"
+  }, {
+    "id" : "fc54faba-81d1-abc2-67c9-d705e718f2f6",
+    "name" : "social_media_link",
+    "display_width" : null,
+    "label" : "Social Media Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "PHONE_NUMBER" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ]
+}, {
+  "id" : "a8a6f618-1fde-1390-a9a2-de3c4ed94978",
+  "name" : "copyright",
+  "display_width" : null,
+  "label" : "Copyright",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+} ]
