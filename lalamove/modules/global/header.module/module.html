@@ -1,63 +1,58 @@
-<div class="header-container content-wrapper">
-  <div class="header-inner">
-    <div class="header-logo">
-      <a href="#">
-        <img src="{{ module.logo }}" alt="Logo" />
-      </a>
-    </div>
+<div class="header-inner">
+  <div class="header-logo">
+    <a href="#">
+      <img src="{{ module.logo }}" alt="Logo" />
+    </a>
+  </div>
 
-    <div class="header-menu-wrapper">
-      <div class="header-menu-inner">
-        <div class="header-menu">
-          <nav aria-label="Main menu" class="navigation-primary">
-            <ul class="submenu level-1" aria-hidden="false">
-              {% for item in module.menu %}
-              <li class="has-submenu menu-item hs-skip-lang-url-rewrite">
-                <a
-                  href="{{ item.link_field.url.href }}"
-                  {% if item.link_field.open_in_new_tab %}
-                    target="_blank"
-                  {% endif %}
-                  {% if item.link_field.rel %}
-                    rel="{{ item.link_field.rel|escape_attr }}"
-                  {% endif %}
-                >
-                  {% inline_text
-                    field="text_field",
-                    value="{{ item.text_field }}" %}
-                </a>
-                <input type="checkbox" id="企業" class="submenu-toggle" />
-                <label class="menu-arrow" for="企業">
-                  <span class="menu-arrow-bg"></span>
-                </label>
-
-                {% if item.dropdown %}
-                  <div class="submenu">
-                    <ul class="submenu level-2" aria-hidden="true">
-                      {% for submenu_item in item.submenu %}
-                      <li class="no-submenu menu-item hs-skip-lang-url-rewrite">
-                        <a
-                          class="menu-link"
-                          href="{{ submenu_item.link_field_1.url.href }}"
-                          {% if submenu_item.link_field_1.open_in_new_tab %}
-                            target="_blank"
-                          {% endif %}
-                        >
-                          {% inline_text
-                            field="submenu.text_field_1",
-                            value="{{ submenu_item.text_field_1 }}",
-                            no_wrapper=True %}
-                        </a>
-                      </li>
-                      {% endfor %}
-                    </ul>
-                  </div>
+  <div class="header-menu-wrapper">
+    <div class="header-menu-inner">
+      <div class="header-menu">
+        <nav aria-label="Main menu" class="navigation-primary">
+          <ul class="submenu level-1" aria-hidden="false">
+            {% for item in module.menu %}
+            <li class="has-submenu menu-item hs-skip-lang-url-rewrite">
+              <a
+                href="{{ item.link_field.url.href }}"
+                {% if item.link_field.open_in_new_tab %}
+                  target="_blank"
                 {% endif %}
-              </li>
-              {% endfor %}
-            </ul>
-          </nav>
-        </div>
+                {% if item.link_field.rel %}
+                  rel="{{ item.link_field.rel|escape_attr }}"
+                {% endif %}
+              >
+                {% inline_text
+                  field="text_field",
+                  value="{{ item.text_field }}" %}
+              </a>
+              <input type="checkbox" id="企業" class="submenu-toggle" />
+              <label class="menu-arrow" for="企業">
+                <span class="menu-arrow-bg"></span>
+              </label>
+              {% if item.dropdown %}
+                <ul class="submenu level-2" aria-hidden="true">
+                  {% for submenu_item in item.submenu %}
+                  <li class="no-submenu menu-item hs-skip-lang-url-rewrite">
+                    <a
+                      class="menu-link"
+                      href="{{ submenu_item.link_field_1.url.href }}"
+                      {% if submenu_item.link_field_1.open_in_new_tab %}
+                        target="_blank"
+                      {% endif %}
+                    >
+                      {% inline_text
+                        field="submenu.text_field_1",
+                        value="{{ submenu_item.text_field_1 }}",
+                        no_wrapper=True %}
+                    </a>
+                  </li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+            </li>
+            {% endfor %}
+          </ul>
+        </nav>
       </div>
     </div>
   </div>

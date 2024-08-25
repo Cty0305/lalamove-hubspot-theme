@@ -18,6 +18,7 @@
     {% if template_css %}
       {{ require_css(get_asset_url(template_css)) }}
     {% endif %}
+    {{ require_css(get_asset_url("../../css/style.css")) }}
     {{ require_css(get_asset_url("../../css/theme-overrides.css")) }}
     {# To see
     a full list of what is included via standard_header_includes please
@@ -52,6 +53,8 @@
     what is included via standard_footer_includes please reference this article:
     https://developers.hubspot.com/docs/cms/hubl/variables#required-page-template-variables
     #}
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     {{ standard_footer_includes }}
   </body>
 </html>

@@ -762,7 +762,7 @@
   -webkit-transition: background-color 0.15s linear;
   -o-transition: background-color 0.15s linear;
   transition: background-color 0.15s linear;
-  white-space: break-spaces;
+  /* white-space: break-spaces; */
 }
 
 .submenu.level-2 .menu-item:first-of-type,
@@ -1029,5 +1029,93 @@
 
   .submenu.level-3 .menu-item .menu-link {
     padding-left: 35px;
+  }
+}
+
+.has-top-banner.onTop .header {
+  background-color: transparent;
+}
+
+.has-top-banner .body-container-wrapper {
+  padding-top: 0;
+}
+
+.has-top-banner.onTop .header {
+  background-color: transparent;
+}
+
+.has-top-banner.onTop body .header .navigation-primary .submenu a {
+  color: #fff;
+}
+
+.has-top-banner.onTop body .header .navigation-primary .submenu.level-2 a {
+  color: #3c3c3b;
+}
+
+.has-top-banner.onTop
+  body
+  .header
+  .navigation-primary
+  .submenu.level-2
+  a:hover {
+  color: #ff671d;
+}
+
+.has-top-banner.onTop .submenu.level-1 > .has-submenu > .menu-arrow {
+  background: url(https://www.lalamove.com/hubfs/raw_assets/public/lalamove-website-2020/images/icon/icon-arrow-down-white.svg)
+    no-repeat 50%;
+}
+
+.has-top-banner.onTop .header__cta a {
+  color: #fff;
+}
+
+.has-top-banner.onTop .header__cta a .icon-lang {
+  background: url(https://www.lalamove.com/hubfs/raw_assets/public/lalamove-website-2020/images/icon/icon-lang-white.svg)
+    no-repeat 50%;
+  background-size: contain;
+}
+
+.has-top-banner.onTop .header__cta a .icon-login {
+  background: url(https://www.lalamove.com/hubfs/raw_assets/public/lalamove-website-2020/images/icon/icon-login-white.svg)
+    no-repeat 50%;
+  background-size: contain;
+}
+
+.has-top-banner.onTop .header__cta a.active {
+  color: #fff;
+}
+
+.has-top-banner.onTop .header__cta a:hover {
+  color: #ff6519;
+}
+
+@media (max-width: 767px) {
+  .body-container-wrapper {
+    padding-top: 65px;
+  }
+
+  .has-top-banner.onTop .header__cta a.active,
+  .has-top-banner.onTop body .header .navigation-primary .submenu a {
+    color: #3c3c3b;
+  }
+
+  .has-top-banner.onTop .header__cta a .icon-lang {
+    background: url(https://www.lalamove.com/hubfs/raw_assets/public/lalamove-website-2020/images/icon/icon-lang-orange.svg)
+      no-repeat 50%;
+  }
+
+  .has-top-banner.onTop .header__cta a.btn-login {
+    color: #ff6519;
+  }
+
+  .has-top-banner.onTop .header__cta a .icon-login {
+    background: url(https://www.lalamove.com/hubfs/raw_assets/public/lalamove-website-2020/images/icon/icon-login.svg)
+      no-repeat 50%;
+  }
+
+  .has-top-banner.onTop .submenu.level-1 > .has-submenu > .menu-arrow {
+    background: url(https://www.lalamove.com/hubfs/raw_assets/public/lalamove-website-2020/images/icon/icon-arrow-down.svg)
+      no-repeat 50%;
   }
 }

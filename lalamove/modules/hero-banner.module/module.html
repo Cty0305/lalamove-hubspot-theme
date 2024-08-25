@@ -12,31 +12,42 @@
           <h1 class="appear in-left appeared">
             {% inline_text
               field="title",
-              value="{{ module.title }}" %}
+              value="{{ module.title }}",
+              no_wrapper=True %}
           </h1>
           <p>
             {% inline_text
               field="subtitle",
-              value="{{ module.subtitle }}" %}
+              value="{{ module.subtitle }}",
+              no_wrapper=True %}
           </p>
+          <div class="top-banner-btn">
+            <a class="button" href="{{ module.button.link_field.url.href }}" {% if module.button.link_field.open_in_new_tab %} target="_blank" {% endif %}>
+              {% inline_text
+                field="button.text_field",
+                value="{{ module.button.text_field }}",
+                no_wrapper=True %}
+            </a>
+          </div>
         </div>
       </div>
     </div>
     <div class="button-box-holder">
       <div class="button-box-inner">
         {% for item in module.identity_group %}
-        <a class="button-box">
-          <span class="button-box__title">
-            <span class="button-box__title__icon">
+        <a class="button-box" href="{{ item.link_field_1.url.href }}" {% if item.link_field_1.open_in_new_tab %} target="_blank" {% endif %}>
+          <span class="button-box-title">
+            <span class="button-box-title-icon">
               <img src="{{ item.icon }}" alt="" />
+              <img class="onHover" src="{{ item.icon_on_hover }}" alt="" />
             </span>
-            <span class="button-box__title__txt">
+            <span class="button-box-title-txt">
               {% inline_text
                 field="identity",
                 value="{{ item.identity }}" %}
             </span>
           </span>
-          <span class="button-box__content">
+          <span class="button-box-content">
             {% inline_text
               field="description",
               value="{{ item.description }}" %}

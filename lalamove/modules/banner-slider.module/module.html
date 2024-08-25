@@ -1,0 +1,29 @@
+<div class="banner-slider-container section">
+  <div class="section__title">
+    <h2>
+      {% inline_text
+        field="title",
+        value="{{ module.title }}",
+        no_wrapper=True %}
+    </h2>
+  </div>
+  <div class="section__inner">
+    <div class="banner-img-slideshow swiper-container">
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        {% for item in module.slide %}
+        <div class="swiper-slide">
+          <a href="{{ item.link_field.url.href }}" {% if item.link_field.open_in_new_tab %} target="_blank" {% endif %}>
+            <img src="{{ item.slide }}" alt="{{ item.slide.alt }}" />
+          </a>
+        </div>
+        {% endfor %}
+      </div>
+      <!-- Navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      <!-- Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</div>

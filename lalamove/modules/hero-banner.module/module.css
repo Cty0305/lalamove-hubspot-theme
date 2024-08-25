@@ -16,11 +16,11 @@
   width: 100%;
 }
 
-.banner-section__top-icon {
+.banner-section-top-icon {
   margin: 25px 0 15px;
 }
 
-.banner-section__top-icon img {
+.banner-section-top-icon img {
   max-height: 80px;
 }
 
@@ -131,23 +131,23 @@
   position: relative;
 }
 
-.button-box span.button-box__title__icon,
-.button-box span.button-box__title__txt {
+.button-box span.button-box-title-icon,
+.button-box span.button-box-title-txt {
   display: inline-block;
   vertical-align: middle;
 }
 
-.button-box__title {
+.button-box-title {
   padding-bottom: 20px;
 }
 
-.button-box__title__icon {
+.button-box-title-icon {
   height: 55px;
   margin-right: -4px;
   width: 40px;
 }
 
-.button-box__title__icon img {
+.button-box-title-icon img {
   height: 55px;
   left: 0;
   position: absolute;
@@ -156,11 +156,11 @@
   width: 40px;
 }
 
-.button-box__title__icon .onHover {
+.button-box-title-icon .onHover {
   opacity: 0;
 }
 
-.button-box span.button-box__title__txt {
+.button-box span.button-box-title-txt {
   font-size: 32px;
   font-weight: 600;
   line-height: 120%;
@@ -169,11 +169,11 @@
   width: calc(100% - 40px);
 }
 
-.button-box__content {
+.button-box-content {
   line-height: 1.3;
 }
 
-.button-box span.button-box__read-more {
+.button-box span.button-box-read-more {
   bottom: 20px;
   font-weight: 700;
   padding-right: 15px;
@@ -181,7 +181,7 @@
   right: 13px;
 }
 
-.button-box span.button-box__read-more:after {
+.button-box span.button-box-read-more:after {
   background: url(https://www.lalamove.com/hubfs/raw_assets/public/lalamove-website-2020/images/icon/icon-arrow-down-white.svg)
     no-repeat 50%;
   content: "";
@@ -203,19 +203,19 @@
   transition: background 0.15s linear;
 }
 
-.button-box:hover .button-box__title__icon img {
+.button-box:hover .button-box-title-icon img {
   opacity: 0;
 }
 
-.button-box:hover .button-box__title__icon img.onHover {
+.button-box:hover .button-box-title-icon img.onHover {
   opacity: 1;
 }
 
-.button-box:hover .button-box__title__txt {
+.button-box:hover .button-box-title-txt {
   color: #ff671d;
 }
 
-.button-box:hover .button-box__read-more:before {
+.button-box:hover .button-box-read-more:before {
   background: #fff;
   bottom: -3px;
   content: "";
@@ -232,17 +232,17 @@
     width: 220px;
   }
 
-  .button-box__title__icon,
-  .button-box__title__icon img {
+  .button-box-title-icon,
+  .button-box-title-icon img {
     height: 42px;
     width: 30px;
   }
 
-  .button-box__title {
+  .button-box-title {
     padding-bottom: 15px;
   }
 
-  .button-box span.button-box__title__txt {
+  .button-box span.button-box-title-txt {
     font-size: 26px;
     padding-left: 8px;
     width: calc(100% - 30px);
@@ -291,23 +291,23 @@
     width: 110px;
   }
 
-  .button-box span.button-box__title__txt {
+  .button-box span.button-box-title-txt {
     font-size: 16px;
     padding-left: 0;
     width: 100%;
   }
 
-  .button-box__title {
+  .button-box-title {
     padding-bottom: 0;
   }
 
-  .button-box span.button-box__title__icon {
+  .button-box span.button-box-title-icon {
     display: block;
     margin-bottom: 2px;
   }
 
-  .button-box span.button-box__content,
-  .button-box span.button-box__read-more {
+  .button-box span.button-box-content,
+  .button-box span.button-box-read-more {
     display: none;
   }
 }
