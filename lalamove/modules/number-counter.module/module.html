@@ -1,0 +1,42 @@
+<div
+  class="counter-container appear section appeared"
+  data-appear-top-offset="-50"
+>
+  <div class="section__title">
+    <h2>
+      {% inline_text
+        field="title",
+        value="{{ module.title }}",
+        no_wrapper=True %}
+    </h2>
+  </div>
+  <div class="section__inner">
+    {% for item in module.number %}
+    <div class="num-counter">
+      <div class="num-counter__num">
+        <span
+          id="count-1"
+          data-count="{{ item.digit }}"
+          class="count-number odometer odometer-auto-theme"
+        >
+          <div class="odometer-inside">
+            <span class="odometer-digit"></span>
+            <span class="count-unit">
+              {% inline_text
+                field="text_field",
+                value="{{ item.text_field }}",
+                no_wrapper=Ture %}
+            </span>
+          </div>
+        </span>
+      </div>
+      <div class="num-counter__desc">
+        {% inline_text
+          field="title",
+          value="{{ item.title }}",
+          no_wrapper=True %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>

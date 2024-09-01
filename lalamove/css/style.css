@@ -17,7 +17,7 @@ select {
   appearance: none;
   -ms-appearance: none;
   background: transparent;
-  border: none;
+  border: 2px solid #d1d6dc;
   border-radius: 0;
   cursor: pointer;
   font-size: 18px;
@@ -26,6 +26,15 @@ select {
   outline-color: transparent;
   padding: 15px 23px;
   text-shadow: 0 0 0 transparent;
+  border-color: #d1d6dc;
+  color: #3c3c3b;
+  padding: 12px;
+  height: 40px;
+}
+
+option:disabled {
+  display: none;
+  font-size: 14px;
 }
 
 iframe {

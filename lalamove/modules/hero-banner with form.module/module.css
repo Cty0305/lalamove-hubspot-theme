@@ -1,0 +1,251 @@
+.top-banner-container {
+  /* margin-bottom: 30px; */
+  position: relative;
+}
+
+.top-banner-container.hasBox {
+  margin-bottom: 135px;
+}
+
+.top-banner-img {
+  background-position: center right 38%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 650px;
+  position: relative;
+  width: 100%;
+}
+
+.banner-section__top-icon {
+  margin: 25px 0 15px;
+}
+
+.banner-section__top-icon img {
+  max-height: 80px;
+}
+
+.top-banner-gradient {
+  background: -moz-linear-gradient(
+    91deg,
+    rgba(0, 0, 0, 0.8) 3%,
+    hsla(0, 0%, 100%, 0) 55%
+  );
+  background: -webkit-linear-gradient(
+    91deg,
+    rgba(0, 0, 0, 0.8) 3%,
+    hsla(0, 0%, 100%, 0) 55%
+  );
+  background: linear-gradient(
+    91deg,
+    rgba(0, 0, 0, 0.8) 3%,
+    hsla(0, 0%, 100%, 0) 55%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#ffffff",GradientType=1);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.top-banner-content {
+  color: #fff;
+  left: 0;
+  padding: 0 20px;
+  position: absolute;
+  top: 150px;
+  width: 100%;
+  z-index: 10;
+}
+
+.top-banner-content .banner-section {
+  font-size: 24px;
+  max-width: 780px;
+}
+
+.banner-section__img {
+  margin-bottom: 5px;
+}
+
+.banner-section__img img {
+  max-width: 100%;
+}
+
+.top-banner-content h1 {
+  color: #fff;
+  line-height: 1.1;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.35);
+}
+
+.top-banner-content p {
+  font-size: 24px;
+  line-height: 1.35;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.35);
+}
+
+.top-banner-btn {
+  margin: 40px 0 0;
+}
+
+.top-banner-btn .button {
+  background: #ff671d
+    url(https://www.lalamove.com/hubfs/raw_assets/public/lalamove-website-2020/images/btn-gradient.svg)
+    no-repeat 50%;
+  background-size: cover;
+  font-size: 24px;
+  font-weight: 500;
+  padding: 17px 25px;
+  transition: color 0.15s linear, background 0.15s linear;
+}
+
+.top-banner-btn__wrapper {
+  border-right: 1px solid hsla(0, 0%, 100%, 0.5);
+  display: inline-block;
+  margin-left: 55px;
+  margin-right: -5px;
+  max-width: 280px;
+  vertical-align: top;
+}
+
+.top-banner-btn__wrapper:last-child {
+  border-right: none;
+  margin-right: 0;
+}
+
+.top-banner-btn__wrapper:first-child {
+  margin-left: 0;
+}
+
+.top-banner-btn__desc {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.top-banner-btn .button:active,
+.top-banner-btn .button:focus,
+.top-banner-btn .button:hover {
+  background: #3c3b3b;
+  color: #ff671d;
+  transition: color 0.15s linear, background 0.15s linear;
+}
+
+.banner-form-section,
+.top-banner-content .banner-section {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.top-banner-content .banner-section {
+  margin-right: -5px;
+  max-width: 900px;
+  padding-right: 55px;
+  width: 65%;
+}
+
+.banner-form-section {
+  background: #fff;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.15);
+  margin-top: -35px;
+  padding: 30px 15px;
+  width: 35%;
+}
+
+.banner-form-section iframe {
+  width: 100%;
+}
+
+@media (max-width: 1280px) {
+  .top-banner-content h1 {
+    font-size: 65px;
+  }
+
+  .top-banner-content .banner-section {
+    padding-right: 25px;
+    width: 55%;
+  }
+
+  .banner-form-section {
+    margin-top: -50px;
+    width: 45%;
+  }
+}
+
+@media (max-width: 767px) {
+  .top-banner-container {
+    margin-bottom: 20px;
+  }
+
+  .top-banner-container.hasBox {
+    margin-bottom: 50px;
+  }
+
+  .top-banner-img {
+    background-size: cover;
+    height: auto;
+  }
+
+  .top-banner-content {
+    margin-bottom: 90px;
+    position: relative;
+    top: 90px;
+  }
+
+  .top-banner-content .banner-section {
+    font-size: 21px;
+  }
+
+  .banner-section__img {
+    width: 65%;
+  }
+
+  .top-banner-content h1 {
+    font-size: 54px;
+  }
+
+  .top-banner-content p {
+    font-size: 21px;
+    line-height: 1.2;
+  }
+
+  .top-banner-btn {
+    margin: 25px 0 0;
+  }
+
+  .top-banner-btn__wrapper {
+    border-bottom: 1px solid hsla(0, 0%, 100%, 0.5);
+    border-right: none;
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%;
+    padding: 25px 0 20px;
+  }
+
+  .top-banner-btn__wrapper:last-child {
+    border-bottom: none;
+    border-right: none;
+    margin-right: 0;
+  }
+
+  .top-banner-btn__wrapper:first-child {
+    margin-left: 0;
+    padding-top: 0;
+  }
+
+  .top-banner-btn__desc {
+    font-size: 16px;
+    margin-top: 6px;
+    max-width: 280px;
+  }
+
+  .banner-form-section,
+  .top-banner-content .banner-section {
+    display: block;
+    width: 100%;
+  }
+
+  .banner-form-section {
+    margin-top: 0;
+  }
+}

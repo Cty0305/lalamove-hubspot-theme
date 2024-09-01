@@ -1,0 +1,53 @@
+<div
+  class="top-banner-container top-banner-container__extra-button top-banner-container__iframe-form"
+>
+  <div class="top-banner-img">
+    <div class="top-banner-gradient"></div>
+    <div class="top-banner-content">
+      <div class="section">
+        <div class="banner-section">
+          <h1 class="appear in-left appeared">
+            {% inline_text
+              field="title",
+              value="{{ module.title }}",
+              no_wrapper=True %}
+          </h1>
+          <p>
+            {% inline_text
+              field="subtitle",
+              value="{{ module.subtitle }}" %}
+          </p>
+          <div class="top-banner-btn">
+            <div class="top-banner-btn__wrapper">
+              {% if module.display_button %}
+                <!-- HTML to show when checked -->
+                <a
+                  class="button"
+                  {% set href = module.button.link_field.url.href %}
+                  {% if module.button.link_field.open_in_new_tab %}
+                    target="_blank"
+                  {% endif %}
+                  {% if module.button.link_field.rel %}
+                    rel="{{ module.button.link_field.rel|escape_attr }}"
+                  {% endif %}
+                  >{% inline_text
+                     field="button.text",
+                     value="{{ module.button.text }}" %}
+                </a>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+        <div class="banner-form-section">
+          {% form
+            form_to_use="{{ module.form_field.form_id }}",
+            response_response_type="{{ module.form_field.response_type }}",
+            response_message="{{ module.form_field.message }}",
+            response_redirect_id="{{ module.form_field.redirect_id }}",
+            response_redirect_url="{{module.form_field.redirect_url}}",
+            gotowebinar_webinar_key="{{ module.form_field.gotowebinar_webinar_key }}" %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

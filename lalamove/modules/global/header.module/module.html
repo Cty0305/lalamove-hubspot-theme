@@ -1,6 +1,6 @@
 <div class="header-inner">
   <div class="header-logo">
-    <a href="#">
+    <a href="{{ module.logo_link.url.href }}" {% if module.logo_link.open_in_new_tab %} target="_blank" {% endif %}>
       <img src="{{ module.logo }}" alt="Logo" />
     </a>
   </div>

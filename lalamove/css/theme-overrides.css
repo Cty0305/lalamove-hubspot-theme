@@ -155,6 +155,10 @@ button:hover {
   color: #ff671d;
 }
 
+form {
+  padding: 20px 36px;
+}
+
 .submitted-message,
 form {
   font-family: Roboto, sans-serif;
@@ -179,7 +183,7 @@ input[type="number"],
 input[type="password"],
 input[type="tel"],
 input[type="text"],
-select,
+,
 textarea {
   border-color: #d1d6dc;
   color: #3c3c3b;
@@ -219,11 +223,16 @@ textarea:focus {
 
 form .hs-button,
 form input[type="submit"] {
-  background-color: #ff671d;
-  border: 0;
-  border-radius: 0;
-  color: #fff;
-  padding: 12px 25px;
+  width: 100%;
+  border: 1px solid #f16622;
+  text-shadow: none;
+  border-radius: unset;
+  box-shadow: none;
+  background: #f16622;
+  font-size: 24px;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: 32px;
 }
 
 form .hs-button:focus,
