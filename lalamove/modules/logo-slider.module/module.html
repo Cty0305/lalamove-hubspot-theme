@@ -1,0 +1,42 @@
+<div class="section logo-slideshow-container py-3">
+  <div class="section__title">
+    <h2>{% inline_text
+          field="title",
+          value="{{ module.title }}",
+          no_wrapper=true %}</h2>
+  </div>
+  <div
+    class="logo-slideshow swiper-container logo-slideshow__desktop total-slide-11 swiper-container-initialized swiper-container-horizontal"
+  >
+    <!-- Slides wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      {% for item in module.image_field %}
+      <div class="swiper-slide">
+        <div class="logo-slideshow__logo">
+          <img
+            class="img-responsive lazyloaded"
+            src="{{ module.image_field }}"
+            {% if item.src %}
+              {% set sizeAttrs = "width=\"{{ item.width|escape_attr }}\" height=\"{{ item.height|escape_attr }}\"" %}
+              {% if item.size_type == "auto" %}
+                {% set sizeAttrs = "width=\"{{ item.width|escape_attr }}\" height=\"{{ item.height|escape_attr }}\" style=\"max-width: 100%; height: auto;\"" %}
+              {% elif item.size_type == "auto_custom_max" %}
+                {% set sizeAttrs = "width=\"{{ item.max_width|escape_attr }}\" height=\"{{ item.max_height|escape_attr }}\" style=\"max-width: 100%; height: auto;\"" %}
+              {% endif %}
+              {% set loadingAttr = item.loading != "disabled" ? "loading=\"{{ item.loading|escape_attr }}\"" : "" %}
+              src="{{ item.src|escape_url }}"
+              alt="{{ item.alt|escape_attr }}"
+              {{ loadingAttr }}
+              {{ sizeAttrs }}
+            />
+          </div>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+    <div
+      class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"
+    ></div>
+  </div>
+</div>
