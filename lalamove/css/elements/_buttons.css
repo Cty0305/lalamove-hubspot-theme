@@ -1,40 +1,47 @@
-button,
 .button,
-.hs-button {
+button {
+  background-color: #494a52;
+  border: 1px solid #494a52;
+  border-radius: 6px;
+  color: #fff;
   cursor: pointer;
   display: inline-block;
+  font-size: 0.92rem;
+  font-weight: 400;
+  height: auto;
+  line-height: 1.1;
+  margin: 0;
+  padding: 15px 53px;
+  position: relative;
   text-align: center;
+  text-decoration: none;
   transition: all 0.15s linear;
   white-space: normal;
+  width: auto;
+  word-break: break-word;
 }
 
-button:disabled,
 .button:disabled,
-.hs-button:disabled {
-  background-color: #D0D0D0;
-  border-color: #D0D0D0;
-  color: #E6E6E6;
+button:disabled {
+  background-color: #d0d0d0;
+  border-color: #d0d0d0;
+  color: #e6e6e6;
 }
 
-/* No button */
-
-.no-button,
-.no-button:hover,
-.no-button:focus,
-.no-button:active {
-  background: none;
-  border: none;
-  border-radius: 0;
-  color: initial;
-  font-family: inherit;
-  font-size: inherit;
-  font-style: inherit;
-  font-weight: inherit;
-  letter-spacing: inherit;
-  line-height: inherit;
-  margin-bottom: 0;
-  padding: 0;
-  text-align: left;
+.button:focus,
+.button:hover,
+button:focus,
+button:hover {
+  background-color: #21222a;
+  border-color: #21222a;
+  color: #fff;
   text-decoration: none;
-  transition: none;
+}
+
+.button:active,
+button:active {
+  background-color: #71727a;
+  border-color: #71727a;
+  color: #fff;
+  text-decoration: none;
 }

@@ -1,20 +1,24 @@
-/* Table */
-
 table {
-  border-collapse: collapse;
+  border: 1px solid #dee2e6;
   margin-bottom: 1.4rem;
   overflow-wrap: break-word;
 }
 
-/* Table cells */
+tbody + tbody {
+  border-top: 2px solid #dee2e6;
+}
 
 td,
 th {
+  border: 1px solid #dee2e6;
+  padding: 0.75rem;
   vertical-align: top;
 }
 
-/* Table header */
-
+thead td,
 thead th {
+  background-color: #343a40;
+  border-bottom: 2px solid #dee2e6;
+  color: #fff;
   vertical-align: bottom;
 }

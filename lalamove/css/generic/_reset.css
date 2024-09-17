@@ -1,3 +1,6 @@
-*, *:before, *:after {
+/* _reset.css */
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }

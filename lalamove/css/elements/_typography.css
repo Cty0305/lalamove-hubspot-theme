@@ -1,34 +1,91 @@
-/* The overflow-wrap is meant to prevent long/large words from breaking the mobile responsiveness of a page (e.g. horizontal scrolling). It is preferred to reduce font sizes on mobile to address this, with this CSS specifically helping with extreme scenarios where a reduction in font size is not possible. */
+@font-face {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 100;
+  src: local('Roboto Thin'), local('Roboto-Thin'),
+    url(https://fonts.gstatic.com/s/roboto/v20/KFOkCnqEu92Fr1MmgVxIIzc.ttf)
+      format('truetype');
+}
+
+@font-face {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'),
+    url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf)
+      format('truetype');
+}
+
+@font-face {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'),
+    url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fBBc9.ttf)
+      format('truetype');
+}
+
+@font-face {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'),
+    url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfBBc9.ttf)
+      format('truetype');
+}
+
+@font-face {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  src: local('Roboto Black'), local('Roboto-Black'),
+    url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmYUtfBBc9.ttf)
+      format('truetype');
+}
+
+html {
+  font-size: 18px;
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 16px;
+  }
+}
 
 body {
+  color: #494a52;
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
   line-height: 1.4;
-  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
-/* Handles word breaking for a few specific languages which handle breaks in words differently. If your content is not translated into these languages, you can safely remove this.  */
-
-html[lang^="ja"] body,
-html[lang^="zh"] body,
-html[lang^="ko"] body {
+html[lang^='ja'] body,
+html[lang^='ko'] body,
+html[lang^='zh'] body {
   line-break: strict;
-  overflow-wrap: normal;
-  word-break: break-all;
 }
-
-/* Paragraphs */
 
 p {
-  font-size: 1rem;
+  font-size: 18px;
   margin: 0 0 1.4rem;
 }
 
-/* Anchors */
-
-a {
-  cursor: pointer;
+strong {
+  font-weight: 700;
 }
 
-/* Headings */
+a {
+  color: #0270e0;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  text-decoration: underline;
+}
 
 h1,
 h2,
@@ -36,57 +93,91 @@ h3,
 h4,
 h5,
 h6 {
+  color: #494a52;
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
   margin: 0 0 1.4rem;
 }
 
-/* Lists */
-
-ul,
-ol {
-  margin: 0 0 1.4rem;
+h1 {
+  font-size: 2.1rem;
 }
 
-ul ul,
+h2 {
+  font-size: 1.6rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 1.175rem;
+  font-weight: 400;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.9rem;
+}
+
+ol,
+ul {
+  margin: 0 0 1.5rem;
+}
+
+ol ol,
 ol ul,
 ul ol,
-ol ol {
+ul ul {
   margin: 0;
 }
 
 ul.no-list {
   list-style: none;
-  margin: 0;
-  padding-left: 0;
-}
-
-/* Code blocks */
-
-pre {
-  overflow: auto;
 }
 
 code {
   vertical-align: bottom;
 }
 
-/* Blockquotes */
-
 blockquote {
-  border-left: 2px solid;
+  border-left: 2px solid #a9a9a9;
   margin: 0 0 1.4rem;
-  padding-left: 0.7rem;
+  padding-left: 15px;
 }
-
-/* Horizontal rules */
 
 hr {
+  background-color: #ccc;
   border: none;
-  border-bottom: 1px solid #CCC;
+  color: #ccc;
+  height: 1px;
 }
 
-/* Image alt text */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
 
-img {
-  font-size: 0.583rem;
-  word-break: normal;
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+:focus {
+  outline: auto;
+  outline-color: green;
+}
+
+.disable-focus-styles :focus {
+  outline: none;
 }
