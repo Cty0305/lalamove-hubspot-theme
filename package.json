@@ -10,5 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "@hubspot/prettier-plugin-hubl": "^0.2.5"
+  },
+  "devDependencies": {
+    "prettier-plugin-hubl": "^0.0.1"
   }
 }
